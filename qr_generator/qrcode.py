@@ -152,7 +152,7 @@ def generate_qr_code_for_invoice(data):
         "Posting Date": invoice.posting_date.strftime("%Y-%m-%d"),
         "Posting Time": posting_time, 
         "Grand Total": invoice.grand_total,
-        "Currency": invoice.currency
+        "Total Taxes": invoice.total_taxes_and_charges
     }
     
     # Convert the dictionary to JSON
