@@ -148,7 +148,7 @@ def generate_qr_code_for_invoice(data):
     # Create a dictionary of the relevant invoice fields
     invoice_data = {
         "Invoice Number": invoice.company,
-        "Customer": invoice.tax_id,
+        "Tax id": invoice.tax_id,
         "Posting Date": invoice.posting_date.strftime("%Y-%m-%d"),
         "Posting Time": posting_time, 
         "Grand Total": invoice.grand_total,
